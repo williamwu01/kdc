@@ -2,18 +2,17 @@
 // app/page.tsx
 import React from 'react'
 import Link from 'next/link';
+import CenteredLayout from './components/CenterContext';
 
 export default function Home() {
   return (
-    <div className="home">
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the first page. Click Next to go to the next page!</p>
+    <CenteredLayout>
+      <h1>Hi Kelly</h1>
+      <p>Welcome to this website all about you</p>
       
-      <div className="button-container">
-        <Link href="/pageTwo">
-          <button>Next</button>
-        </Link>
-      </div>
-    </div>
+			<Link href="/pageTwo">
+        <button className="button">Next</button>
+      </Link>
+    </CenteredLayout>
   );
 }
