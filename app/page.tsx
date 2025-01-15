@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link';
 import CenteredLayout from './components/CenterContext';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -13,6 +14,14 @@ export default function Home() {
 			<Link href="/pageTwo">
         <button className="button">Next</button>
       </Link>
+			<Image
+  src="/dancing.gif"
+  alt="Dancing Animation"
+  width={200}
+  height={200}
+  unoptimized
+/>
     </CenteredLayout>
+		
   );
 }
