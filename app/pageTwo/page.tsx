@@ -6,8 +6,10 @@ import CenteredLayout from '../components/CenterContext';
 export default function PageTwo() {
 	return (
 		<CenteredLayout>
-			<h1>Welcome to Page 2</h1>
-			<p>This is page 2. Click Prev to go back to the Home page, or Next to go to Page 3.</p>
+			<h1>Today Marks 6 Months</h1>
+			<p>Time flew by, I cant believe it has been finally 6 months!
+				<br /> The question is ... 
+			</p>
 
 			<div className='flex flex-row gap-4'>
 				<Link href='/'>

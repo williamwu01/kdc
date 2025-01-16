@@ -35,7 +35,7 @@ export default function PlayfulButton() {
           transform: "translate(9%, 50%)", // Adjust this to fine-tune the button's position
         }}
         onClick={moveNoButton}
-        onMouseEnter={moveNoButton}
+        // onMouseEnter={moveNoButton}
       >
         No...
       </button>
