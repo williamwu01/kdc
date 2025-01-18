@@ -22,8 +22,8 @@ export default function PlayfulButton() {
   return (
     <div className="flex flex-row gap-4 items-center justify-start pr-24"> {/* Change justify-center to justify-start */}
       {/* Prev button */}
-      <a href="/pageTwo" className="button">
-        Prev
+      <a href="/yes" className="button">
+        Yes
       </a>
 
       {/* No button */}
@@ -32,7 +32,7 @@ export default function PlayfulButton() {
         style={{
           top: noButtonPosition.top,
           left: noButtonPosition.left,
-          transform: "translate(9%, 50%)", // Adjust this to fine-tune the button's position
+          transform: "translate(9%, -140%)", // Adjust this to fine-tune the button's position
         }}
         onClick={moveNoButton}
         // onMouseEnter={moveNoButton}

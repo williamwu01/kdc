@@ -17,7 +17,7 @@ const CenteredLayout: React.FC<CenteredLayoutProps> = ({ children }) => {
         textAlign: 'center',
 				gap:'10px',
 				position:'relative',
-				background: 'linear-gradient(to bottom, #0000ff, #ffffff)'
+				background: 'linear-gradient(to bottom, #0000ff, #ADD8E6)'
       }}
     >
       {children}

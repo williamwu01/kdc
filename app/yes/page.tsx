@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Confetti from 'react-confetti';
 import CenteredLayout from '../components/CenterContext';
-import PlayfulButton from '../components/PlayfulButton';
+import Image from 'next/image';
 
 export default function Yes() {
   const [dimensions, setDimensions] = useState({
@@ -38,9 +39,18 @@ export default function Yes() {
         />
       )}
       <CenteredLayout>
-        <h1>Kelly</h1>
-        <p>Will You Go Out With Me?</p>
-        <PlayfulButton />
+        <h1 className='text-white'>YEAAAA CELEBRATION ❤️</h1>
+				<p className='text-white'>Next Chapter: Switzerland & guinea pig farm</p>
+				<Link href="/">
+        <button className="button">Back Home</button>
+      </Link>
+			<Image
+				src="/hearts.webp"
+				alt="Dancing Animation"
+				width={200}
+				height={200}
+				unoptimized
+			/>
       </CenteredLayout>
     </>
   );
